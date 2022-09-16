@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Essential</string>
+    <string name="product_title">Veeba Pizza &amp; Pasta Sauce</string>
+    <string name="rupee">₹</string>
+    <string name="product_description">A wholesome bowl of Quaker Oats for breakfast can be a great start for your day. Made from 100% wholegrain oats, this breakfast option is a natural source of carbohydrates, proteins and dietary fibre. A bowl of Quaker porridge every day will reduce the risk of high blood pressure and cholesterol. This easy-to-prepare porridge takes only three minutes to prepare. While being high on the nutrition end, this porridge is delicious too.</string>
+    <string name="mobile_number">+91 6397584561</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="checkout">Checkout</string>
+</resources>

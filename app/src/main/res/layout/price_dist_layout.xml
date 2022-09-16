@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/deep_blue"
+        android:gravity="center"
+        android:padding="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/check_verified"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amazon_ember"
+            android:text="You saved a total of ₹"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/cart_amount_saved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amazon_ember"
+            android:text="125"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amazon_ember"
+            android:text=" on this order"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/amazon_ember_bold"
+        android:text="Order Summary"
+        android:textColor="@color/grey3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/amazon_ember"
+        android:text="Total Price"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Delivery"
+        android:textColor="@color/black"
+        android:fontFamily="@font/amazon_ember"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rupee"
+        android:fontFamily="@font/amazon_ember"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_total_price"
+        app:layout_constraintEnd_toStartOf="@+id/cart_total_price"
+        app:layout_constraintTop_toTopOf="@+id/cart_total_price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amazon_ember"
+        android:text="₹"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_delivery_price"
+        app:layout_constraintEnd_toStartOf="@+id/cart_delivery_price"
+        app:layout_constraintTop_toTopOf="@+id/cart_delivery_price" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/amazon_ember_bold"
+        android:text="Order Sub total"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amazon_ember"
+        android:text="₹"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cart_grand_total"
+        app:layout_constraintEnd_toStartOf="@+id/cart_grand_total"
+        app:layout_constraintTop_toTopOf="@+id/cart_grand_total" />
+
+    <TextView
+        android:id="@+id/cart_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="3200"
+        android:fontFamily="@font/amazon_ember"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/cart_delivery_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="40"
+        android:fontFamily="@font/amazon_ember"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/cart_grand_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="3240"
+        android:fontFamily="@font/amazon_ember"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView16" />
+</androidx.constraintlayout.widget.ConstraintLayout>

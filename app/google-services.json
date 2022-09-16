@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "661321278576",
+    "project_id": "essential-6a75f",
+    "storage_bucket": "essential-6a75f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661321278576:android:0f526feb73a4e6328b80b5",
+        "android_client_info": {
+          "package_name": "com.android.retail.hawk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661321278576-c7hu9orh07nt2hg3ne89halviv6g14qc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5frGSjy1DMP13L_wm_-pzXoRw_YzWDwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661321278576-c7hu9orh07nt2hg3ne89halviv6g14qc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

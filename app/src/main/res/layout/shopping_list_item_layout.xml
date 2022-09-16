@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/shoplist_pd_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/placeholder_1" />
+
+    <LinearLayout
+        android:id="@+id/perc_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/search_bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shoplist_pd_mrp"
+        app:layout_constraintStart_toEndOf="@+id/shoplist_pd_mrp"
+        app:layout_constraintTop_toTopOf="@+id/shoplist_pd_mrp">
+
+        <TextView
+            android:id="@+id/shoplist_pd_percent_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amazon_ember"
+            android:text="19"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/amazon_ember"
+            android:text="% OFF"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shoplist_pd_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/amazon_ember"
+        android:maxLines="2"
+        android:text="Maggi Masala Noodles - Pack of 12"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shoplist_pd_image"
+        app:layout_constraintTop_toBottomOf="@+id/shoplist_pd_price" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/shoplist_pd_detail"
+        app:layout_constraintTop_toBottomOf="@+id/shoplist_pd_detail">
+
+        <LinearLayout
+            android:id="@+id/shoplist_add_to_cart_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/button_bg_yellow"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amazon_ember"
+                android:text="ADD TO CART"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/shoplist_remove_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_delete"
+            app:tint="@color/grey3" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/shoplist_pd_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/amazon_ember_bold"
+        android:text="540"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/shoplist_pd_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shoplist_pd_mrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/amazon_ember"
+        android:text="640"
+        app:layout_constraintBottom_toBottomOf="@+id/shoplist_pd_price"
+        app:layout_constraintStart_toEndOf="@+id/shoplist_pd_price" />
+
+    <TextView
+        android:id="@+id/shoplist_pd_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="560g"
+        android:fontFamily="@font/amazon_ember"
+        app:layout_constraintStart_toStartOf="@+id/shoplist_pd_name"
+        app:layout_constraintTop_toBottomOf="@+id/shoplist_pd_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
